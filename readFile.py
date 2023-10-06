@@ -72,4 +72,4 @@ class SMTIFileReader():
             
         
 s = SMTIFileReader()         
-s.read("mcdermid.txt")
+#s.read("mcdermid.txt")

@@ -37,7 +37,8 @@ class SMTIWeakStability():
             SumsWomenVariables = LinExpr()
             w_list = self.women[woman]["list"]            
             for tie in w_list:
-                for man in tie:                     
+                for man in tie:         
+                    print(woman, w_list, man)
                     SumsWomenVariables += self.men[man]["variables"][woman] 
             # .. add constraint that a woman must not be assigned to more than one man
             # addConstr(lhs, sense, rhs, name)
@@ -142,7 +143,7 @@ class SMTIWeakStability():
         return False
         
         
-S = SMTIWeakStability("ex1.txt")
+S = SMTIWeakStability("in3.txt")
 #S = SMTIWeakStability("ex2.txt")
 #S = SMTIWeakStability("ex3.txt")
 S.run_ip_model()
