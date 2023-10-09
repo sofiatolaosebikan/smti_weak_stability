@@ -143,7 +143,7 @@ class SMTIWeakStability():
         return False
         
         
-S = SMTIWeakStability("in3.txt")
+S = SMTIWeakStability("in4.txt")
 #S = SMTIWeakStability("ex2.txt")
 #S = SMTIWeakStability("ex3.txt")
 S.run_ip_model()
